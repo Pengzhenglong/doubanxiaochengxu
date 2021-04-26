@@ -1,0 +1,52 @@
+<searchbar  isnavigator="{{true}}"></searchbar>
+
+
+<!-- top20电影 -->
+<indexmodule  title="电影"  items="{{movies}}" ></indexmodule>
+ <!-- 正在热映的电影 -->
+ <indexmodule  title="正在热映电影"  items="{{tvs}}" ></indexmodule>
+ <!-- 即将上映的电影 -->
+ <indexmodule  title="即将上映电影"  items="{{shows}}" ></indexmodule>
+
+
+
+
+
+
+  <!-- 正在热映的电影 -->
+<!-- <view  class="module-group">
+  <view   class="module-top">
+    <view  class="module-title">正在热映电影</view>
+    <navigator  class="module-more">更多</navigator> 
+   </view>
+    <scroll-view class="module-scroll-view"  scroll-x="{{true}}" >
+      <navigator   wx:for="{{tvs}}"  wx:key="{{item-title}}"        class="item-navigator">
+        <view class="item-group">
+          <view class="thumbnail-group">
+            <image class="thumbnail" src='{{item.images.small}}'></image>
+          </view>
+          <view class="item-title">{{item.title}}</view>
+        <stars  rate="{{item.rating.average}}" ></stars>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view> -->
+
+ <!-- 即将上映的电影 -->
+ <!-- <view  class="module-group">
+  <view   class="module-top">
+    <view  class="module-title">即将上映电影</view>
+    <navigator  class="module-more">更多</navigator> 
+   </view>
+    <scroll-view class="module-scroll-view"  scroll-x="{{true}}" >
+      <navigator   wx:for="{{shows}}"  wx:key="{{item-title}}"        class="item-navigator">
+        <view class="item-group">
+          <view class="thumbnail-group">
+            <image class="thumbnail" src='{{item.images.small}}'></image>
+          </view>
+          <view class="item-title">{{item.title}}</view>
+        <stars  rate="{{item.rating.average}}" ></stars>
+        </view>
+      </navigator>
+    </scroll-view>
+</view> -->

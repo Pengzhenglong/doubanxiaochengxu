@@ -1,0 +1,56 @@
+/* 最大模块 */
+.module-group{
+  padding: 40rpx;
+  background-color: #fff;
+}
+/* 顶部电影 更多flex布局 */
+.module-group .module-top{
+  font-size: 36rpx;
+  display: flex;
+  /* 主轴元素贴两边 */
+  justify-content: space-between;
+}
+/* title字体颜色设置 */
+.module-top .moudle-title{
+  color:#494949;
+}
+/* more颜色设置 */
+.module-top .module-more{
+  color: #41be57;
+}
+
+.module-scroll-view{
+  margin-top: 40rpx;
+  width: 100%;
+  height:400rpx;
+  /* 设置横向滚动 */
+  white-space: nowrap;
+}
+.module-scroll-view .item-navigator{
+  width:200rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+/* 最后一个的右边距 对齐 */
+.module-scroll-view .item-navigator:last-of-type{
+  margin-right: 0;
+}
+.item-navigator  .item-group{
+  width: 100px;
+}
+.item-group .thumbnail-group{
+  width: 100%;
+  height: 284rpx;
+}
+.thumbnail-group .thumbnail{
+  width: 100px;
+  height: 100%;
+}
+.item-group .item-title{
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  /* 文本过长处理 */
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
