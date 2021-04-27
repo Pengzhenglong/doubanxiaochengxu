@@ -4,15 +4,9 @@
     <navigator  url="{{moreurl}}"  class="module-more">更多</navigator> 
    </view>
     <scroll-view class="module-scroll-view"  scroll-x="{{true}}" >
-      <navigator   wx:for="{{items}}"  wx:key="{{item-title}}"        class="item-navigator">
-        <view class="item-group">
-          <view class="thumbnail-group">
-            <image class="thumbnail" src='{{item.images.small}}'></image>
-          </view>
-          <view class="item-title">{{item.title}}</view>
-        <stars  rate="{{item.rating.average}}" ></stars>
-        </view>
-      </navigator>
+      <!-- for循环渲染itemview -->
+      <!-- item="{{item}}"传递的是item.js中的一个属性 -->
+      <itemview wx:for="{{items}}"  wx:key="{{item.title}}"  item="{{item}}" ></itemview>  
     </scroll-view>
   </view>
   

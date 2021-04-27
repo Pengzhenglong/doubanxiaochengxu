@@ -1,0 +1,11 @@
+<navigator  wx:if="{{item}}"  class="item-navigator">
+<view class="item-group">
+<view class="thumbnail-group">
+<image class="thumbnail" src='{{item.cover.url}}'></image>
+</view>
+<view class="item-title">{{item.title}}</view>
+<stars  rate="{{item.rating.value}}" ></stars>
+</view>
+</navigator>
+<!-- 如果为空，样式和item-navigator一样-->
+<view  wx:else  class="item-navigator"></view>

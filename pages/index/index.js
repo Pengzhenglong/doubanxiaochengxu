@@ -1,11 +1,9 @@
-import  {network}  from  "network.js"
-
+import  {network}  from  "../../utils/network.js"
 Page({
   /*
   *页面初始数据
   */
  data:{
-
  },
 /*
 *生命周期函数-监听页面加载
@@ -22,7 +20,7 @@ onLoad:function(options){
       }
     })
     //  正在热映的电影
-    network.getTvList({
+    network.getTVList({
       success:function(tvs){
         that.setData({
           tvs:tvs

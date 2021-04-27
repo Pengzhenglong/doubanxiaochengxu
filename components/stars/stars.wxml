@@ -2,5 +2,5 @@
 <image    style="width:{{starsize}}rpx; height:{{starsize}}rpx"        wx:for="{{lights}}" wx:key="this" src="/imags/rate_light.png"></image>
 <image   style="width:{{starsize}}rpx; height:{{starsize}}rpx"       wx:for="{{halfs}}"     wx:key="this"    src="/imags/rate_half.png"></image>
 <image    style="width:{{starsize}}rpx; height:{{starsize}}rpx"       wx:for="{{grays}}"    wx:key="this"       src="/imags/rate_gray.png"></image>
-<text   style="font-size:{{fontsize}}rpx;color:{{fontcolor}} "      >{{ratetext}}</text>
+<text  wx:if="{{istext}}" style="font-size:{{fontsize}}rpx;color:{{fontcolor}} "      >{{ratetext}}</text>
 </view>

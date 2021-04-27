@@ -1,7 +1,6 @@
 {
-  "component": true,
   "usingComponents": {
-   
+    "searchbar":"/components/searchbar/searchbar",
     "itemview":"/components/itemview/itemview"
   }
 }

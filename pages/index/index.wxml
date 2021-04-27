@@ -2,11 +2,11 @@
 
 
 <!-- top20电影 -->
-<indexmodule  title="电影"  items="{{movies}}" ></indexmodule>
+<indexmodule  title="电影"  items="{{movies}}"  moreurl="/pages/list/list?type=movie" ></indexmodule>
  <!-- 正在热映的电影 -->
- <indexmodule  title="正在热映电影"  items="{{tvs}}" ></indexmodule>
+ <indexmodule  title="电视剧"  items="{{tvs}}"   moreurl="/pages/list/list?type=tv" ></indexmodule>
  <!-- 即将上映的电影 -->
- <indexmodule  title="即将上映电影"  items="{{shows}}" ></indexmodule>
+ <indexmodule  title="综艺"  items="{{shows}}" moreurl="/pages/list/list?type=show"   ></indexmodule>
 
 
 

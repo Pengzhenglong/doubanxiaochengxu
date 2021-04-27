@@ -1,0 +1,133 @@
+.item-header{
+  padding: 60rpx 30rpx;
+}
+
+.item-header .item-title{
+  font-size: 50rpx;
+}
+
+.item-header .item-detail{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.item-detail .left-detail{
+  flex: 1;
+  margin-right: 20rpx;
+}
+
+.left-detail .item-rate{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-rate .comment-persons{
+  font-size: 28rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}
+
+.item-detail .right-detail{
+  width: 200rpx;
+  height: 300rpx;
+}
+
+.right-detail image{
+  width: 100%;
+  height: 100%;
+}
+
+.item-sub-detail{
+  margin-top: 40rpx;
+  font-size: 32rpx;
+}
+.item-sub-detail view {
+  margin-bottom: 10rpx;
+}
+
+
+
+
+.item-tags-title{
+  /* 设置元素的下外边距 */
+  margin-bottom: 10rpx;
+}
+.item-tags{
+  padding: 0 30rpx;
+}
+.item-tags .item-tags-title{
+  color: #b3b3b3;
+  font-size: 32rpx;
+  margin-bottom:20rpx;
+}
+.item-tags .item-tags-list{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.item-tags-list text{
+  padding:10rpx 20rpx;
+  background: #f5f5f5;
+  font-size: 32rpx;
+  columns: #353535;
+  text-align: center;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+
+
+
+.comment-list-group{
+  padding: 60rpx 30rpx;
+}
+.comment-list-group  .comment-title{
+  font-size: 32rpx;
+  color: #b3b3b3;
+}
+/* 左边固定，右边内容适配 */
+.comment-list-group  .comment-group{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 40rpx;
+}
+.comment-group .left-comment{
+  width: 70rpx;
+  margin-right: 20rpx;
+}
+.left-comment  .avatar{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.comment-group  .right-comment{
+  flex:1;
+}
+.right-comment   .username-rate{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.username-rate .username{
+  font-size: 36rpx;
+  margin-right: 20rpx;
+}
+.release-time{
+  color: #b3b3b3;
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}
+.content{
+  font-size: 32rpx;
+  color: #353535;
+  margin-top:10rpx;
+}
+.more-comment{
+  text-align: center;
+  font-size: 36rpx;
+  color: #41be57;
+  margin-bottom: 60rpx;
+}

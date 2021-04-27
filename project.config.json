@@ -39,7 +39,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.16.1",
+  "libVersion": "2.10.4",
   "appid": "wxcf52a4c880aea74c",
   "projectname": "doubandemo1",
   "debugOptions": {

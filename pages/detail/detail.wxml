@@ -1,0 +1,77 @@
+<view  class="item-header">
+  <view  class="item-title"> 肖申克的救赎(1994) </view>
+      <view   class="item-detail">
+        <view    class="left-detail">
+          <view   class="item-rate">
+              <stars rate="9.7"></stars>
+              <text  class="comment-persons">203894评价</text>
+            </view>
+            <view  class="item-sub-detail"> 
+              <view  class="item-type"> 
+                142分钟  剧情 / 犯罪
+              </view> 
+              <view  class="item-show">
+                1994-10-14(美国)
+              </view>
+              <view  class="item-actors">
+                导演: 弗兰克·德拉邦特/ 主演: 蒂姆·罗宾斯
+              </view>
+            </view>
+            </view>
+         <view  class="right-detail">
+           <image  src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p480747492.webp"></image>
+         </view>
+        </view>
+       </view>
+
+       <view  class="item-tags">
+         <view class="item-tags-title" >豆瓣成员常用标签</view>
+       <view  class="item-tags-list">
+         <text>黑色幽默</text><text>小人物</text><text>戏剧</text><text>方言</text><text>中国大陆</text><text>人性</text><text>剧情</text>
+       </view>
+    </view>
+
+<view  class="comment-list-group">
+<view  class="comment-title">短评(202220297)</view>
+<view  class="comment-group">
+<view  class="left-comment">
+  <image  class="avatar" src="https://img3.doubanio.com/icon/u218767230-1.jpg"></image>
+</view>
+
+   <view class="right-comment">
+  <view  class="username-rate">
+<view  class="username">羚锐</view>
+  <stars  rate="5" starsize="30" istext="{{false}}" ></stars>
+  </view>
+  
+<view  class="release-time">2018-12-03   12:22:22</view>
+<view  class="content">这部纪录片上映也等了很久，就像这段历史被揭开的时间也是等待了太久，
+  这几个人的人生或许仍然不能被探索清楚，但至少已经开始被发掘，其实这不仅是关于八个中国乘客，也是那一代华人移民故事，方的故事尤为震撼，
+  一个从冰海里挣扎出来的幸存者，又如此努力在美国讨生活还要帮助亲友，他的故事比电影更加传奇。
+</view>
+</view>
+</view>
+
+
+<view  class="comment-group">
+<view  class="left-comment">
+  <image  class="avatar" src="https://img3.doubanio.com/icon/u218767230-1.jpg"></image>
+</view>
+
+   <view class="right-comment">
+  <view  class="username-rate">
+<view  class="username">羚锐</view>
+  <stars  rate="5" starsize="30" istext="{{false}}" ></stars>
+  </view>
+  
+<view  class="release-time">2018-12-03   12:22:22</view>
+<view  class="content">这部纪录片上映也等了很久，就像这段历史被揭开的时间也是等待了太久，
+  这几个人的人生或许仍然不能被探索清楚，但至少已经开始被发掘，其实这不仅是关于八个中国乘客，也是那一代华人移民故事，方的故事尤为震撼，
+  一个从冰海里挣扎出来的幸存者，又如此努力在美国讨生活还要帮助亲友，他的故事比电影更加传奇。
+</view>
+</view>
+</view>
+
+ </view>
+
+ <navigator class="more-comment">查看更多短评</navigator>
