@@ -6,7 +6,9 @@
     <scroll-view class="module-scroll-view"  scroll-x="{{true}}" >
       <!-- for循环渲染itemview -->
       <!-- item="{{item}}"传递的是item.js中的一个属性 -->
-      <itemview wx:for="{{items}}"  wx:key="{{item.title}}"  item="{{item}}" ></itemview>  
+      <itemview wx:for="{{items}}"  wx:key="{{item.title}}"  item="{{item}}" 
+      itemurl="/pages/detail/detail?type={{type}}&id={{item.id}}"
+      ></itemview>  
     </scroll-view>
   </view>
   

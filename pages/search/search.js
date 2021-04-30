@@ -1,4 +1,5 @@
 // pages/search/search.js
+import  {network}  from   "../../utils/network"
 Page({
 
   /**
@@ -12,55 +13,43 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+        // wx.getStorage({
+        //   key: 'searched',
+        //   success:function(res){
+        //     console.log(res)
+        //   }
+        // })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onSearchInputEvent:function(event){
+    var  that= this;
+    // console.log(event)
+    var  value = event.detail.value;
+    network.getSearch({
+      q:value,
+      success:function(subjects){
+            that.setData({
+              subjects:subjects
+            })
+      }
+    })
   },
+  onItemTapEvent:function(event){
+    // console.log(event)
+    var id = event.currentTarget.dataset.id;
+  // 跳转到某一个页面
+    wx.navigateTo({
+      url: '/pages/detail/detail?type=movie&id='+id,
+    })
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    // var title = event.currentTarget.dataset.title;
+    // wx.setStorage({
+    //   key: 'searched',
+    //   data:[{id:id,title:title}] ,  
+      
+    //   success:function(){
+    //   console.log("保存成功！")
+    // }
+    // })
   }
+ 
 })

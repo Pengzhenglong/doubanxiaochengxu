@@ -1,2 +1,23 @@
-<searchbar></searchbar>
-<view>这是搜索页面</view>
+<searchbar  bindsearchinput="onSearchInputEvent"></searchbar>
+
+<view  class="history-list-group">
+<view class="history-title">
+<view  class="title">历史记录</view>
+<view  class="clear">清除</view>
+</view>
+<navigator  class="history-group">泰坦尼克号</navigator>
+</view>
+
+
+<view  class="item-list-group">
+<view  wx:for="{{subjects}}"
+ class="item-group"  wx:key ="{{item.id}}"
+ bindtap="onItemTapEvent"  data-id="{{item.id}}"  data-title="{{item.title}}" >
+<image  src="{{item.pic.normal}}"  class="thumbnail"></image>
+<view  class="info-group">
+<view  class="title">{{item.title}}</view>
+<view  class="rate-year"> {{item.rating.value}}分{{item.year}}</view>
+</view>
+</view>
+</view>
+

@@ -6,8 +6,12 @@ Component({
   properties: {
   rate:{
         type:Number,
-        value:0
-      }, 
+        value:0,
+        observer: function(newVal, oldVal,changePath) {
+          // 属性值变化时执行,newVal就是新设置的数据，old是旧数据
+          this.updateRate();
+        }
+      },  
   starsize:{
     type:Number,
     value:20 //rpx
@@ -39,10 +43,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
-  },
-  lifetimes:{
-    attached:function(){
+    updateRate:function(){
       var  that = this;
       var  rate= that.properties.rate;
       var  inRate = parseInt(rate);
@@ -72,5 +73,11 @@ Component({
         ratetext:ratetext,
       });
     }
+  },
+
+  lifetimes:{
+attached:function(){
+  this.updateRate();
   }
+ }
 })

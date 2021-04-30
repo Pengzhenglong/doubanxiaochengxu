@@ -14,6 +14,9 @@ Page({
   onLoad: function (options) {
     var  that= this;
     var  type = options.type;
+    that.setData({
+      type:type
+    })
     var  title ="";
     // 数据加载前
     wx.showLoading({

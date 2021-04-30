@@ -88,7 +88,8 @@
   font-size: 32rpx;
   color: #b3b3b3;
 }
-/* 左边固定，右边内容适配 */
+
+/* 左边固定，右边内容适配
 .comment-list-group  .comment-group{
   display: flex;
   justify-content: flex-start;
@@ -124,7 +125,8 @@
   font-size: 32rpx;
   color: #353535;
   margin-top:10rpx;
-}
+} */
+
 .more-comment{
   text-align: center;
   font-size: 36rpx;

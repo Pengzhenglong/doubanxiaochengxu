@@ -1,4 +1,5 @@
-<navigator  wx:if="{{item}}"  class="item-navigator">
+<navigator  wx:if="{{item}}" 
+ class="item-navigator"    url="{{itemurl}}">
 <view class="item-group">
 <view class="thumbnail-group">
 <image class="thumbnail" src='{{item.cover.url}}'></image>
